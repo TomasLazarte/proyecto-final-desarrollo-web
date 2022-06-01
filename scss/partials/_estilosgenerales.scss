@@ -13,7 +13,7 @@ header {
     #barra-nav {
         height: 60px;
         #contenedor-nav{
-        background-color: $fondo-negro;
+        background-color: $color-header-footer;
         padding: 0rem;
             #home {
                 margin-left: 100px;
@@ -25,12 +25,12 @@ header {
             }
             
             #boton-hamburguesa {
-                background-color: $color-letra;
+                background-color: $color-texto;
                 margin-right: 20px;
             }
             
             .menu {
-                background-color: $fondo-negro;
+                background-color: $color-header-footer;
                 margin-right: 100px;
                 flex-grow: 0;
                 #menu-secciones a {
@@ -44,13 +44,9 @@ header {
             }
         }
     }
-}
-
+}    
 main {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: flex-start;
+    background-color: $color-main;
     margin-top: 60px;
 }
 
@@ -62,12 +58,12 @@ main {
         margin: 0px;
         margin-left: 100px;
         font-family: $fuente;
-        color: $color-letra;
+        color: $color-texto;
         font-weight: bold;
     }
 }
 
-h1, h2 {
+h2 {
     @include estilos-titulos;
 }
 
@@ -112,7 +108,7 @@ h1, h2 {
                 .menu{
                     #menu-secciones{
                         a {
-                            font-size: 12px;
+                            font-size: 13px;
                         }
                     }
                 }

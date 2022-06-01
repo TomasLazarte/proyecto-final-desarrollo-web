@@ -5,14 +5,14 @@
     text-decoration: none;
     font-family: $fuente;
     font-weight: bold;
-    color: $nav-color;
+    color: $color-menu;
 }
 
 @mixin estilos-titulos {
     font-family: $fuente;
     font-size: $letra-titulo;
     color: $color-titulo;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @mixin margen-main {
@@ -21,7 +21,7 @@
 }
 
 @mixin estilo-texto-about{
-    background-color: #222432;
+    background-color: $color-contenido;
     text-align: center;
-    border: solid 2px #171717;
+    border: solid 2px $color-main;
 }

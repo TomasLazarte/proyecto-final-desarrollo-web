@@ -27,6 +27,10 @@
             font-family: $fuente;
             border-radius: 5px;
             padding: 5px 5px;
+            &:hover{
+                background-color: $color-subtitulo;
+                color: $color-texto;
+            }
         }
     }
     .logos-redes {
