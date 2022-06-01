@@ -1,0 +1,68 @@
+/* ------- SECCION CONTACTO ------- */
+@import "../variables/variables";
+@import "../sass/extend";
+@import "../sass/mixins";
+
+
+.contacto-contenedor {
+    text-align: center;
+    line-height: 2;
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    h3 {
+        font-family: $fuente;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .form {
+        .nombre, .email, .msj  {
+            width: 300px;
+            margin-top: 10px;
+            padding: 5px 5px;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+        .enviar {
+            font-family: $fuente;
+            border-radius: 5px;
+            padding: 5px 5px;
+        }
+    }
+    .logos-redes {
+        margin-top: 20px;
+        a {
+            color: transparent;
+            margin: 20px;
+            img {
+                width: 30px;
+                height: 30px;
+                &:hover {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    h3 {
+        font-size: 14px;
+    }
+    .nombre, .email, .msj  {
+        width: 200px;
+    }
+    .nombre, .email {
+        height: 30px;
+    }
+    .msj {
+        height: 200px;
+    }
+    .enviar {
+        height: 40px;
+    }
+    .form {
+        font-size: 12px;
+    }
+}

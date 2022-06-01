@@ -1,0 +1,98 @@
+/* ------- SECCION GALERÍA ------- */
+@import "../variables/variables";
+@import "../sass/extend";
+@import "../sass/mixins";
+
+.galeria-imagenes {
+    @include margen-main;
+    #foto-uno, #foto-tres, #foto-cinco {
+        margin-left: 37.5%;
+    }
+    
+    #foto-dos, #foto-cuatro, #foto-seis {
+        margin-left: 25%;
+    }
+    #carousel-prev {
+        margin-left: 25%;
+    }
+    
+    #carousel-next {
+        margin-right: 25%
+    }
+}
+
+.galeria-videos {
+    margin-top: 30px;
+    @include margen-main;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "uno dos"
+    "tres cuatro";
+    gap: 20px;
+    .galeria-titulo-dos {
+        grid-area: titulo;
+    }
+    
+    .video-uno {
+        grid-area: uno;
+    }
+    
+    .video-dos {
+        grid-area: dos;
+    }
+    
+    .video-tres {
+        grid-area: tres;
+    }
+    
+    .video-cuatro {
+        grid-area: cuatro;
+    }
+    
+    iframe:hover {
+        width: 510px;
+        height: 310px;
+    }
+}
+
+@media (max-width: 1225px){
+    .galeria-titulo-uno{
+        text-align: center;
+    }
+
+    .galeria-videos {
+        justify-content: center;
+        text-align: center;
+        grid-template-areas:
+        "titulo"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+        gap: 15px;
+        .galeria-titulo-dos {
+            grid-area: titulo;
+        }
+        
+        .video-uno {
+            grid-area: uno;
+            width: 300px;
+        }
+        
+        .video-dos {
+            grid-area: dos;
+            width: 300px;
+        }
+        
+        .video-tres {
+            grid-area: tres;
+            width: 300px;
+        }
+        
+        .video-cuatro {
+            grid-area: cuatro;
+            width: 300px;
+        }
+    }
+}

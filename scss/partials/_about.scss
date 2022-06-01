@@ -1,0 +1,115 @@
+/* ------- SECCION ABOUT ------- */
+@import "../variables/variables";
+@import "../sass/extend";
+@import "../sass/mixins";
+
+
+.about-contenedor {
+    @include margen-main;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "texto-uno imagen-uno"
+    "texto-dos imagen-uno"
+    "imagen-dos texto-tres";
+    gap: 15px;
+    font-family: $fuente;
+    color: $color-letra;
+    line-height: 2;
+    font-size: 16px;
+    align-items: center;
+    .about-titulo {
+        grid-area: titulo;
+    }
+    
+    .about-texto-uno {
+        grid-area: texto-uno;
+        @include estilo-texto-about;
+    }
+    
+    .about-texto-dos {
+        grid-area: texto-dos;
+        @include estilo-texto-about;
+    }
+    
+    .about-img-uno {
+        grid-area: imagen-uno;
+        height: 400px;
+        width: 300px;
+    }
+    
+    .about-img-dos {
+        grid-area: imagen-dos;
+        height: 300px;
+        width: 500px;
+    }
+    
+    .about-texto-tres {
+        grid-area: texto-tres;
+        @include estilo-texto-about;
+    }
+}
+
+
+@media (max-width: 975px) {
+    .about-contenedor{    
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-areas:
+        "titulo"
+        "texto-uno"
+        "imagen-uno"
+        "texto-dos"
+        "imagen-dos"
+        "texto-tres";
+        gap: 10px;
+        font-size: 13px;
+        justify-items: center;
+        align-items: center;
+        .about-titulo {
+            grid-area: titulo;
+        }
+        
+        .about-texto-uno {
+            grid-area: texto-uno;
+        }
+        
+        .about-texto-dos {
+            grid-area: texto-dos;
+        }
+        
+        .about-img-uno {
+            grid-area: imagen-uno;
+            height: 350px;
+            width: 275px;
+        }
+        
+        .about-img-dos {
+            grid-area: imagen-dos;
+            height: 250px;
+            width: 400px;
+        }
+        
+        .about-texto-tres {
+            grid-area: texto-tres;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .about-contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12px;
+        .about-img-uno {
+            height: 300px;
+            width: 250px;
+        }
+        
+        .about-img-dos {
+            height: 225px;
+            width: 300px;
+        }
+    }
+}

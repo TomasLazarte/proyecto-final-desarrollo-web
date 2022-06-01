@@ -1,0 +1,129 @@
+/* ------- ESTILOS GENERALES ------- */
+
+@import "../variables/variables";
+@import "../sass/extend";
+@import "../sass/mixins";
+
+header {
+    @extend .header-footer;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    #barra-nav {
+        height: 60px;
+        #contenedor-nav{
+        background-color: $fondo-negro;
+        padding: 0rem;
+            #home {
+                margin-left: 100px;
+                @include estilos-nav;
+                img {
+                    width: 50px;
+                    height: 25px;
+                }
+            }
+            
+            #boton-hamburguesa {
+                background-color: $color-letra;
+                margin-right: 20px;
+            }
+            
+            .menu {
+                background-color: $fondo-negro;
+                margin-right: 100px;
+                flex-grow: 0;
+                #menu-secciones a {
+                    @include estilos-nav;
+                    transition: all .25s;
+                    &:hover {
+                        color: $color-titulo;
+                        border-bottom: 2px solid $color-titulo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+#footer {
+    @extend .header-footer;
+    display: flex;
+    align-items: center;
+    div p {
+        margin: 0px;
+        margin-left: 100px;
+        font-family: $fuente;
+        color: $color-letra;
+        font-weight: bold;
+    }
+}
+
+h1, h2 {
+    @include estilos-titulos;
+}
+
+@media (max-width: 990px){
+    .menu {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 725px){
+    header{
+        #barra-nav{
+            #contenedor-nav{
+                #home {
+                    margin-left: 20px;
+                }
+                .menu{
+                    #menu-secciones{
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }          
+
+    #footer div .copyright {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}    
+
+
+@media (max-width: 400px) {
+    header{
+        #barra-nav{
+            #contenedor-nav{
+                .menu{
+                    #menu-secciones{
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer div .copyright {
+        font-size: 13px;
+    }     
+    h2 {
+        font-size: 15px;
+    }
+}

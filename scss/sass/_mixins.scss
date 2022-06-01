@@ -1,0 +1,27 @@
+@import "../variables/variables";
+
+@mixin estilos-nav {
+    font-size: $letra-grande;
+    text-decoration: none;
+    font-family: $fuente;
+    font-weight: bold;
+    color: $nav-color;
+}
+
+@mixin estilos-titulos {
+    font-family: $fuente;
+    font-size: $letra-titulo;
+    color: $color-titulo;
+    font-weight: 700;
+}
+
+@mixin margen-main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@mixin estilo-texto-about{
+    background-color: #222432;
+    text-align: center;
+    border: solid 2px #171717;
+}

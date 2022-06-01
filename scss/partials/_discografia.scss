@@ -1,0 +1,194 @@
+/* ------- SECCION DISCOGRAFÍA ------- */
+@import "../variables/variables";
+@import "../sass/extend";
+@import "../sass/mixins";
+
+
+.discografia-contenedor {
+    @include margen-main;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "album-uno disco-uno album-dos disco-dos"
+    "album-tres disco-tres album-cuatro disco-cuatro";
+    gap: 30px;
+    line-height: 2;
+    .discografia-titulo {
+        grid-area: titulo;
+    }
+    
+    .album-uno {
+        grid-area: album-uno;
+    }
+    
+    .disco-uno {
+        grid-area: disco-uno;
+    }
+    
+    .album-dos {
+        grid-area: album-dos;
+    }
+    
+    .disco-dos {
+        grid-area: disco-dos;
+    }
+    
+    .album-tres {
+        grid-area: album-tres;
+    }
+    
+    .disco-tres {
+        grid-area: disco-tres;
+    }
+    
+    .album-cuatro {
+        grid-area: album-cuatro;
+    }
+    
+    .disco-cuatro {
+        grid-area: disco-cuatro;
+    }
+    img, iframe {
+        border-radius: 20px;
+        height: 250px;
+        width: 250px;
+        transition: all .5s;
+    }
+    img:hover {
+        height: 260px;
+        width: 260px;
+    }
+    iframe:hover {
+        height: 420px;
+        width: 310px;
+    }
+}
+
+@media (max-width: 1225px){
+    .discografia-contenedor {
+        justify-content: center;
+        grid-template-areas:
+        "titulo titulo"
+        "album-uno disco-uno"
+        "album-dos disco-dos"
+        "album-tres disco-tres"
+        "album-cuatro disco-cuatro";
+        gap: 20px;
+        line-height: 2;
+        .discografia-titulo {
+            grid-area: titulo;
+        }
+        
+        .album-uno {
+            grid-area: album-uno;
+        }
+        
+        .disco-uno {
+            grid-area: disco-uno;
+        }
+        
+        .album-dos {
+            grid-area: album-dos;
+        }
+        
+        .disco-dos {
+            grid-area: disco-dos;
+        }
+        
+        .album-tres {
+            grid-area: album-tres;
+        }
+        
+        .disco-tres {
+            grid-area: disco-tres;
+        }
+        
+        .album-cuatro {
+            grid-area: album-cuatro;
+        }
+        
+        .disco-cuatro {
+            grid-area: disco-cuatro;
+        }
+        img, iframe {
+            border-radius: 20px;
+            height: 225px;
+            width: 225px;
+            transition: all .5s;
+        }
+        img:hover {
+            height: 240px;
+            width: 240px;
+        }
+        iframe:hover {
+            height: 300px;
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .discografia-contenedor {
+        grid-template-areas:
+        "titulo"
+        "album-uno"
+        "disco-uno"
+        "album-dos"
+        "disco-dos"
+        "album-tres"
+        "disco-tres"
+        "album-cuatro"
+        "disco-cuatro";
+        gap: 15px;
+        line-height: 2;
+        .discografia-titulo {
+            grid-area: titulo;
+        }
+        
+        .album-uno {
+            grid-area: album-uno;
+        }
+        
+        .disco-uno {
+            grid-area: disco-uno;
+        }
+        
+        .album-dos {
+            grid-area: album-dos;
+        }
+        
+        .disco-dos {
+            grid-area: disco-dos;
+        }
+        
+        .album-tres {
+            grid-area: album-tres;
+        }
+        
+        .disco-tres {
+            grid-area: disco-tres;
+        }
+        
+        .album-cuatro {
+            grid-area: album-cuatro;
+        }
+        
+        .disco-cuatro {
+            grid-area: disco-cuatro;
+        }
+        img, iframe {
+            border-radius: 20px;
+            height: 200px;
+            width: 200px;
+            transition: all .5s;
+        }
+        img:hover {
+            height: 200px;
+            width: 200px;
+        }
+        iframe:hover {
+            height: 210px;
+            width: 220px;
+        }
+    }
+}
