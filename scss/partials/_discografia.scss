@@ -16,35 +16,27 @@
     .discografia-titulo {
         grid-area: titulo;
     }
-    
     .album-uno {
         grid-area: album-uno;
     }
-    
     .disco-uno {
         grid-area: disco-uno;
     }
-    
     .album-dos {
         grid-area: album-dos;
     }
-    
     .disco-dos {
         grid-area: disco-dos;
     }
-    
     .album-tres {
         grid-area: album-tres;
     }
-    
     .disco-tres {
         grid-area: disco-tres;
     }
-    
     .album-cuatro {
         grid-area: album-cuatro;
     }
-    
     .disco-cuatro {
         grid-area: disco-cuatro;
     }
@@ -64,7 +56,7 @@
     }
 }
 
-@media (max-width: 1225px){
+@media (max-width: 1225px) {
     .discografia-contenedor {
         justify-content: center;
         grid-template-areas:
@@ -78,35 +70,27 @@
         .discografia-titulo {
             grid-area: titulo;
         }
-        
         .album-uno {
             grid-area: album-uno;
         }
-        
         .disco-uno {
             grid-area: disco-uno;
         }
-        
         .album-dos {
             grid-area: album-dos;
         }
-        
         .disco-dos {
             grid-area: disco-dos;
         }
-        
         .album-tres {
             grid-area: album-tres;
         }
-        
         .disco-tres {
             grid-area: disco-tres;
         }
-        
         .album-cuatro {
             grid-area: album-cuatro;
         }
-        
         .disco-cuatro {
             grid-area: disco-cuatro;
         }
@@ -127,7 +111,7 @@
     }
 }
 
-@media (max-width: 575px){
+@media (max-width: 575px) {
     .discografia-contenedor {
         grid-template-areas:
         "titulo"
@@ -144,35 +128,27 @@
         .discografia-titulo {
             grid-area: titulo;
         }
-        
         .album-uno {
             grid-area: album-uno;
         }
-        
         .disco-uno {
             grid-area: disco-uno;
         }
-        
         .album-dos {
             grid-area: album-dos;
         }
-        
         .disco-dos {
             grid-area: disco-dos;
         }
-        
         .album-tres {
             grid-area: album-tres;
         }
-        
         .disco-tres {
             grid-area: disco-tres;
         }
-        
         .album-cuatro {
             grid-area: album-cuatro;
         }
-        
         .disco-cuatro {
             grid-area: disco-cuatro;
         }

@@ -12,7 +12,7 @@ header {
     top: 0;
     #barra-nav {
         height: 60px;
-        #contenedor-nav{
+        #contenedor-nav {
         background-color: $color-header-footer;
         padding: 0rem;
             #home {
@@ -44,7 +44,8 @@ header {
             }
         }
     }
-}    
+}
+    
 main {
     background-color: $color-main;
     margin-top: 60px;
@@ -67,21 +68,21 @@ h2 {
     @include estilos-titulos;
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
     .menu {
         margin-left: 20px;
     }
 }
 
-@media (max-width: 725px){
-    header{
-        #barra-nav{
-            #contenedor-nav{
+@media (max-width: 725px) {
+    header {
+        #barra-nav {
+            #contenedor-nav {
                 #home {
                     margin-left: 20px;
                 }
-                .menu{
-                    #menu-secciones{
+                .menu {
+                    #menu-secciones {
                         a {
                             font-size: 16px;
                         }
@@ -90,7 +91,6 @@ h2 {
             }
         }
     }          
-
     #footer div .copyright {
         margin-left: 20px;
         font-size: 16px;
@@ -100,13 +100,12 @@ h2 {
     }
 }    
 
-
 @media (max-width: 400px) {
-    header{
-        #barra-nav{
-            #contenedor-nav{
-                .menu{
-                    #menu-secciones{
+    header {
+        #barra-nav {
+            #contenedor-nav {
+                .menu {
+                    #menu-secciones {
                         a {
                             font-size: 13px;
                         }
@@ -115,7 +114,6 @@ h2 {
             }
         }
     }
-
     #footer div .copyright {
         font-size: 13px;
     }     

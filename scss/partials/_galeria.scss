@@ -8,14 +8,12 @@
     #foto-uno, #foto-tres, #foto-cinco {
         margin-left: 37.5%;
     }
-    
     #foto-dos, #foto-cuatro, #foto-seis {
         margin-left: 25%;
     }
     #carousel-prev {
         margin-left: 25%;
     }
-    
     #carousel-next {
         margin-right: 25%
     }
@@ -33,34 +31,28 @@
     .galeria-titulo-dos {
         grid-area: titulo;
     }
-    
     .video-uno {
         grid-area: uno;
     }
-    
     .video-dos {
         grid-area: dos;
     }
-    
     .video-tres {
         grid-area: tres;
     }
-    
     .video-cuatro {
         grid-area: cuatro;
     }
-    
     iframe:hover {
         width: 510px;
         height: 310px;
     }
 }
 
-@media (max-width: 1225px){
-    .galeria-titulo-uno{
+@media (max-width: 1225px) {
+    .galeria-titulo-uno {
         text-align: center;
     }
-
     .galeria-videos {
         justify-content: center;
         text-align: center;
@@ -74,22 +66,18 @@
         .galeria-titulo-dos {
             grid-area: titulo;
         }
-        
         .video-uno {
             grid-area: uno;
             width: 300px;
         }
-        
         .video-dos {
             grid-area: dos;
             width: 300px;
         }
-        
         .video-tres {
             grid-area: tres;
             width: 300px;
         }
-        
         .video-cuatro {
             grid-area: cuatro;
             width: 300px;

@@ -21,29 +21,24 @@
     .about-titulo {
         grid-area: titulo;
     }
-    
     .about-texto-uno {
         grid-area: texto-uno;
         @include estilo-texto-about;
     }
-    
     .about-texto-dos {
         grid-area: texto-dos;
         @include estilo-texto-about;
     }
-    
     .about-img-uno {
         grid-area: imagen-uno;
         height: 100%;
         width: 300px;
     }
-    
     .about-img-dos {
         grid-area: imagen-dos;
         height: 300px;
         width: 500px;
     }
-    
     .about-texto-tres {
         grid-area: texto-tres;
         @include estilo-texto-about;
@@ -52,7 +47,7 @@
 
 
 @media (max-width: 975px) {
-    .about-contenedor{    
+    .about-contenedor {    
         margin-left: 50px;
         margin-right: 50px;
         grid-template-areas:
@@ -69,35 +64,30 @@
         .about-titulo {
             grid-area: titulo;
         }
-        
         .about-texto-uno {
             grid-area: texto-uno;
         }
-        
         .about-texto-dos {
             grid-area: texto-dos;
         }
-        
         .about-img-uno {
             grid-area: imagen-uno;
             height: 350px;
             width: 275px;
         }
-        
         .about-img-dos {
             grid-area: imagen-dos;
             height: 250px;
             width: 400px;
         }
-        
         .about-texto-tres {
             grid-area: texto-tres;
         }
     }
 }
 
-@media (max-width: 500px){
-    .about-contenedor{
+@media (max-width: 500px) {
+    .about-contenedor {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -106,7 +96,6 @@
             height: 300px;
             width: 250px;
         }
-        
         .about-img-dos {
             height: 225px;
             width: 300px;
