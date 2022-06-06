@@ -4,10 +4,10 @@
 @import "../sass/mixins";
 
 .inicio-fondo {
-    display: flex;
     justify-content: center;
     .inicio-contenedor {
         text-align: center;
+        @include margen-main;
         .inicio-imagen {
             height: 450px;
             width: 450px;
@@ -28,7 +28,7 @@
                 align-items: center;
                 }
             .primera-col-items, .segunda-col-items, .tercera-col-items {
-                font-size: 18px;
+                font-size: $letra-grande;
                 font-weight: bold;
                 color: $color-texto;
                 background-color: $color-contenido;
@@ -36,10 +36,11 @@
                 border: solid rgb(25, 25, 25) 3px;
                 width: 100%;
                 margin: 5px;
+                padding: 3px;
                 transition: all .25s; 
             }
             .tercera-col-items:hover {
-                box-shadow: 0px 3px 3px 2px;
+                box-shadow: 0px 2px 2px 2px;
                 background-color: $color-subtitulo;
             }  
         }
@@ -47,40 +48,44 @@
 }
 
 @media (max-width: 725px) {
-    .inicio-contenedor {
-        .inicio-imagen {
-            height: 200px;
-            width: 350px;
-        }
-        .inicio-tour {
-            .primera-col-items {
-                font-size: 16px;
+    .inicio-fondo{
+        .inicio-contenedor {
+            .inicio-imagen {
+                height: 325px;
+                width: 325px;
             }
-            .segunda-col-items {
-                font-size: 16px;
-            }
-            .tercera-col-items {
-                font-size: 16px;
+            .inicio-tour {
+                .primera-col-items {
+                    font-size: 14px;
+                }
+                .segunda-col-items {
+                    font-size: 14px;
+                }
+                .tercera-col-items {
+                    font-size: 14px;
+                }
             }
         }
     }
 }
 
 @media (max-width: 400px) {
-    .inicio-contenedor {
-        .inicio-imagen {
-            height: 150px;
-            width: 300px;
-        }
-        .inicio-tour {
-            .primera-col-items {
-                font-size: 13px;
+    .inicio-fondo{
+        .inicio-contenedor {
+            .inicio-imagen {
+                height: 250px;
+                width: 250px;
             }
-            .segunda-col-items {
-                font-size: 13px;
-            }
-            .tercera-col-items {
-                font-size: 13px;
+            .inicio-tour {
+                .primera-col-items {
+                    font-size: $letra-chica;
+                }
+                .segunda-col-items {
+                    font-size: $letra-chica;
+                }
+                .tercera-col-items {
+                    font-size: $letra-chica;
+                }
             }
         }
     }

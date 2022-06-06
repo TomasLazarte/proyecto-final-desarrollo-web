@@ -10,14 +10,15 @@
 
 @mixin estilos-titulos {
     font-family: $fuente;
-    font-size: $letra-titulo;
     color: $color-titulo;
     font-weight: bold;
 }
 
 @mixin margen-main {
+    margin-top: 60px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 60px;
 }
 
 @mixin estilo-texto-about {

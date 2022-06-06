@@ -3,25 +3,62 @@
 @import "../sass/extend";
 @import "../sass/mixins";
 
-.galeria-imagenes {
+.galeria-contenedor {
     @include margen-main;
-    #foto-uno, #foto-tres, #foto-cinco {
-        margin-left: 37.5%;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+    gap: 10px;
+    .galeria-titulo-uno {
+        grid-area: titulo;
     }
-    #foto-dos, #foto-cuatro, #foto-seis {
-        margin-left: 25%;
+    .imagen-uno {
+        border-radius: $borde-imagenes;
+        grid-area: uno;
     }
-    #carousel-prev {
-        margin-left: 25%;
+    .imagen-dos {
+        border-radius: $borde-imagenes;
+        grid-area: dos;
     }
-    #carousel-next {
-        margin-right: 25%
+    .imagen-tres {
+        border-radius: $borde-imagenes;
+        grid-area: tres;
+    }
+    .imagen-cuatro {
+        border-radius: $borde-imagenes;
+        grid-area: cuatro;
+    }
+    .imagen-cinco {
+        border-radius: $borde-imagenes;
+        grid-area: cinco;
+    }
+    .imagen-seis {
+        border-radius: $borde-imagenes;
+        grid-area: seis;
+    }
+    .imagen-siete {
+        border-radius: $borde-imagenes;
+        grid-area: siete;
+    }
+    .imagen-ocho {
+        border-radius: $borde-imagenes;
+        grid-area: ocho;
+    }
+    .imagen-nueve {
+        border-radius: $borde-imagenes;
+        grid-area: nueve;
     }
 }
 
 .galeria-videos {
-    margin-top: 30px;
-    @include margen-main;
+    margin-top: 50px;
     display: grid;
     grid-template-areas:
     "titulo titulo"
@@ -32,26 +69,39 @@
         grid-area: titulo;
     }
     .video-uno {
+        border-radius: $borde-imagenes;
         grid-area: uno;
+        width: 445px;
     }
     .video-dos {
+        border-radius: $borde-imagenes;
         grid-area: dos;
+        width: 445px;
     }
     .video-tres {
+        border-radius: $borde-imagenes;
         grid-area: tres;
+        width: 445px;
     }
     .video-cuatro {
+        border-radius: $borde-imagenes;
         grid-area: cuatro;
-    }
-    iframe:hover {
-        width: 510px;
-        height: 310px;
+        width: 445px;
     }
 }
 
 @media (max-width: 1225px) {
-    .galeria-titulo-uno {
+    .galeria-imagenes{
+        justify-content: center;
         text-align: center;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "titulo titulo"
+        "uno dos"
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho"
+        "nueve none";
     }
     .galeria-videos {
         justify-content: center;
@@ -68,19 +118,45 @@
         }
         .video-uno {
             grid-area: uno;
-            width: 300px;
+            width: 350px;
         }
         .video-dos {
             grid-area: dos;
-            width: 300px;
+            width: 350px;
         }
         .video-tres {
             grid-area: tres;
-            width: 300px;
+            width: 350px;
         }
         .video-cuatro {
             grid-area: cuatro;
-            width: 300px;
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .galeria-imagenes{
+        grid-template-areas:
+        "titulo"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis"
+        "siete"
+        "ocho"
+        "nueve"
+        "none";
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .galeria-videos {
+        .video-uno, .video-dos, .video-tres, .video-cuatro {
+            width: 250px;
         }
     }
 }

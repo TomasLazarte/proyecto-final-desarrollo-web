@@ -3,47 +3,50 @@
 @import "../sass/extend";
 @import "../sass/mixins";
 
-
-.contacto-contenedor {
-    text-align: center;
-    line-height: 2;
-    animation-name: aparecer;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    h3 {
-        font-family: $fuente;
-        font-size: 16px;
-        color: #ffffff;
-    }
-    .form {
-        .nombre, .email, .msj  {
-            width: 300px;
-            margin-top: 10px;
-            padding: 5px 5px;
-            border-radius: 5px;
-            line-height: 1.5;
-        }
-        .enviar {
+.contacto-fondo{
+    justify-content: center;
+    .contacto-contenedor {
+        @include margen-main;
+        text-align: center;
+        line-height: 2;
+        animation-name: aparecer;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        h3 {
             font-family: $fuente;
-            border-radius: 5px;
-            padding: 5px 5px;
-            &:hover{
-                background-color: $color-subtitulo;
-                color: $color-texto;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .form {
+            .nombre, .email, .msj  {
+                width: 300px;
+                margin-top: 10px;
+                padding: 5px 5px;
+                border-radius: 5px;
+                line-height: 1.5;
+            }
+            .enviar {
+                font-family: $fuente;
+                border-radius: 5px;
+                padding: 5px 5px;
+                &:hover{
+                    background-color: $color-subtitulo;
+                    color: $color-texto;
+                }
             }
         }
-    }
-    .logos-redes {
-        margin-top: 20px;
-        a {
-            color: transparent;
-            margin: 20px;
-            img {
-                width: 30px;
-                height: 30px;
-                &:hover {
-                    width: 40px;
-                    height: 40px;
+        .logos-redes {
+            margin-top: 20px;
+            a {
+                color: transparent;
+                margin: 20px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    &:hover {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
         }

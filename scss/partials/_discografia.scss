@@ -58,7 +58,6 @@
 
 @media (max-width: 1225px) {
     .discografia-contenedor {
-        justify-content: center;
         grid-template-areas:
         "titulo titulo"
         "album-uno disco-uno"
@@ -68,6 +67,7 @@
         gap: 20px;
         line-height: 2;
         .discografia-titulo {
+            text-align: center;
             grid-area: titulo;
         }
         .album-uno {
@@ -126,6 +126,7 @@
         gap: 15px;
         line-height: 2;
         .discografia-titulo {
+            text-align: center;
             grid-area: titulo;
         }
         .album-uno {
