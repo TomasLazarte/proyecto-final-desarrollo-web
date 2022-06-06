@@ -17,30 +17,36 @@
     color: $color-texto;
     line-height: 2;
     font-size: 16px;
-    align-items: center;
+    align-content: center;
+    justify-items: center;
     .about-titulo {
         grid-area: titulo;
     }
     .about-texto-uno {
         grid-area: texto-uno;
         @include estilo-texto-about;
+        border-radius: $borde-imagenes;
     }
     .about-texto-dos {
         grid-area: texto-dos;
         @include estilo-texto-about;
+        border-radius: $borde-imagenes;
     }
     .about-img-uno {
         grid-area: imagen-uno;
+        border-radius: $borde-imagenes;
         height: 100%;
         width: 300px;
     }
     .about-img-dos {
         grid-area: imagen-dos;
+        border-radius: $borde-imagenes;
         height: 300px;
         width: 500px;
     }
     .about-texto-tres {
         grid-area: texto-tres;
+        border-radius: $borde-imagenes;
         @include estilo-texto-about;
     }
 }
@@ -91,7 +97,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 12px;
+        font-size: $letra-chica;
         .about-img-uno {
             height: 300px;
             width: 250px;

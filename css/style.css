@@ -171,29 +171,35 @@ h1, h3 {
   color: #ffffff;
   line-height: 2;
   font-size: 16px;
-  align-items: center; }
+  align-content: center;
+  justify-items: center; }
   .about-contenedor .about-titulo {
     grid-area: titulo; }
   .about-contenedor .about-texto-uno {
     grid-area: texto-uno;
     background-color: #605555;
     text-align: center;
-    border: solid 2px #3f3434; }
+    border: solid 2px #3f3434;
+    border-radius: 10px; }
   .about-contenedor .about-texto-dos {
     grid-area: texto-dos;
     background-color: #605555;
     text-align: center;
-    border: solid 2px #3f3434; }
+    border: solid 2px #3f3434;
+    border-radius: 10px; }
   .about-contenedor .about-img-uno {
     grid-area: imagen-uno;
+    border-radius: 10px;
     height: 100%;
     width: 300px; }
   .about-contenedor .about-img-dos {
     grid-area: imagen-dos;
+    border-radius: 10px;
     height: 300px;
     width: 500px; }
   .about-contenedor .about-texto-tres {
     grid-area: texto-tres;
+    border-radius: 10px;
     background-color: #605555;
     text-align: center;
     border: solid 2px #3f3434; }
@@ -252,7 +258,8 @@ h1, h3 {
   gap: 30px;
   line-height: 2; }
   .discografia-contenedor .discografia-titulo {
-    grid-area: titulo; }
+    grid-area: titulo;
+    text-align: center; }
   .discografia-contenedor .album-uno {
     grid-area: album-uno; }
   .discografia-contenedor .disco-uno {
@@ -287,7 +294,6 @@ h1, h3 {
     gap: 20px;
     line-height: 2; }
     .discografia-contenedor .discografia-titulo {
-      text-align: center;
       grid-area: titulo; }
     .discografia-contenedor .album-uno {
       grid-area: album-uno; }
@@ -323,7 +329,6 @@ h1, h3 {
     gap: 15px;
     line-height: 2; }
     .discografia-contenedor .discografia-titulo {
-      text-align: center;
       grid-area: titulo; }
     .discografia-contenedor .album-uno {
       grid-area: album-uno; }
@@ -370,7 +375,8 @@ h1, h3 {
   grid-template-areas: "titulo titulo titulo" "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
   gap: 10px; }
   .galeria-imagenes .galeria-titulo-uno {
-    grid-area: titulo; }
+    grid-area: titulo;
+    text-align: center; }
   .galeria-imagenes .imagen-uno {
     border-radius: 10px;
     grid-area: uno; }
@@ -405,7 +411,8 @@ h1, h3 {
   grid-template-areas: "titulo titulo" "uno dos" "tres cuatro";
   gap: 20px; }
   .galeria-videos .galeria-titulo-dos {
-    grid-area: titulo; }
+    grid-area: titulo;
+    text-align: center; }
   .galeria-videos .video-uno {
     border-radius: 10px;
     grid-area: uno;
@@ -426,12 +433,10 @@ h1, h3 {
 @media (max-width: 1225px) {
   .galeria-imagenes {
     justify-content: center;
-    text-align: center;
     grid-template-columns: auto;
     grid-template-areas: "titulo titulo" "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve none"; }
   .galeria-videos {
     justify-content: center;
-    text-align: center;
     grid-template-areas: "titulo" "uno" "dos" "tres" "cuatro";
     gap: 15px; }
     .galeria-videos .galeria-titulo-dos {
